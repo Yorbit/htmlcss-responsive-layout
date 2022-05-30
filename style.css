@@ -17,6 +17,7 @@ body {
     --carbon: #333;
     --silver: #C3C3C3;
     --red: #E71837;
+    --brown: #A37063;
     --blue: #0E4BEF;
     --yellow: #FCE903;
 }
@@ -27,8 +28,17 @@ body {
     display: flex;
 }
 
+.row {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 .h-100 {
     height: 100%;
+}
+
+.min-h-200 {
+    min-height: 200px;
 }
 
 .w-20 {
@@ -49,4 +59,84 @@ body {
 
 .w-100 {
     width: 100%;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.pv-30 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.po-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mv-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    margin-top: 105px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+section {
+    margin: 50px 0;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#menu-desk {
+    display: none;
+}
+
+#app {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#app .card {
+    background-color: var(--brown);
+    border-radius: 20px;
+    margin: 10px 5px;
+}
+
+#app .row .:first-child {
+    flex-basis: calc(100% /3);
+}
+
+#app .col {
+    flex-basis: calc(100% / 3);
+    margin: 0 -10px;
 }

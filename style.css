@@ -132,7 +132,7 @@ section {
     margin: 10px 5px;
 }
 
-#app .row .:first-child {
+#app .row:first-child {
     flex-basis: calc(100% /3);
 }
 

@@ -170,12 +170,6 @@ h4 {
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
 #navbar {
     position: fixed;
     z-index: 1;
@@ -185,13 +179,16 @@ h4 {
     left: 0;
     right: 0;
     height: 80px;
-    display: flex;
-    background-color: var(--red);
+    background-color: var(--secondary);
     color: var(--white);
 }
 
 #menu-desk {
     display: none;
+}
+
+#menu-desk li {
+    padding-left: 10px;
 }
 
 #app {
@@ -201,16 +198,24 @@ h4 {
 }
 
 #app .card {
-    background-color: var(--brown);
     border-radius: 20px;
-    margin: 10px 5px;
+    background-color: var(--light-secondary);
 }
 
-#app .row:first-child {
-    flex-basis: calc(100% /3);
+#app .lcard {
+    padding-bottom: ------
 }
 
 #app .col {
-    flex-basis: calc(100% / 3);
-    margin: 0 -10px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#app .card-content .btn {
+    width: 80%;
+}
+
+#app .card-image {
+    padding-top: 25px;
+    width: 100%;
 }

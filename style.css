@@ -173,14 +173,17 @@ h4 {
 #navbar {
     position: fixed;
     z-index: 1;
-    justify-content: space-between;
-    align-items: center;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
     background-color: var(--secondary);
     color: var(--white);
+}
+
+#navbar .dp-flex {
+    justify-content: space-between;
+    align-items: center;
 }
 
 #menu-desk {
@@ -191,19 +194,13 @@ h4 {
     padding-left: 10px;
 }
 
-#app {
-    justify-content: space-between;
-    display: flex;
-    flex-flow: column wrap;
-}
-
 #app .card {
     border-radius: 20px;
     background-color: var(--light-secondary);
 }
 
 #app .lcard {
-    padding-bottom: ------
+    padding-bottom: 0;
 }
 
 #app .col {
@@ -218,4 +215,20 @@ h4 {
 #app .card-image {
     padding-top: 25px;
     width: 100%;
+}
+
+#plan {
+    color: var(--white);
+}
+
+#plan .btn-primary {
+    border-radius: 50%;
+    color: var(--dark);
+    padding: 10px 20px;
+}
+
+#plan .row .col:last-child div {
+    color: var(--dark);
+    border-radius: 15%;
+    background-color: var(--white);
 }

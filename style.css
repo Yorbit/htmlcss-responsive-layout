@@ -23,6 +23,10 @@
     color: var(--primary);
 }
 
+.bg-secondarylight {
+    background-color: var(--secondary-light);
+}
+
 .c-secondary {
     color: var(--secondary);
 }
@@ -178,15 +182,15 @@ p {
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 38px;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 30px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h4 {
@@ -415,6 +419,10 @@ footer {
     }
 
     #info h2 {
+        font-size: 4rem;
+    }
+
+    #info h1 {
         font-size: 4rem;
     }
 

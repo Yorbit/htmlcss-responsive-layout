@@ -27,8 +27,24 @@
     color: var(--secondary);
 }
 
+.c-dark {
+    color: var(--dark);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
 .bg-primary {
     background-color: var(--primary);
+}
+
+.c-white {
+    color: var(--white);
+}
+
+.c-grey {
+    color: var(--grey);
 }
 
 .container {
@@ -86,11 +102,6 @@
     padding-top: 30px;
 }
 
-.po-30 {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 .m-20 {
     margin: 20px;
 }
@@ -102,6 +113,7 @@
 
 .btn {
     display: inline-block;
+    text-decoration: none;
     padding: 7px 10px;
     border-radius: 20px;
     background-color: var(--white);
@@ -112,22 +124,26 @@
 .btn-type1 {
     padding: 15px 30px;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .btn-type2 {
     padding: 30px 50px;
     color: var(--primary);
     border-radius: 30px;
+    font-weight: bold;
 }
 
 .btn-primary {
     background-color: var(--primary);
     color: var(--white);
+    font-weight: bold;
 }
 
 .btn-secondary {
     background-color: var(--secondary);
     color: var(--white);
+    font-weight: bold;
 }
 
 img {
@@ -156,6 +172,11 @@ section {
     margin: 30px 0;
 }
 
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
 h1 {
     font-size: 52px;
 }
@@ -165,7 +186,7 @@ h2 {
 }
 
 h3 {
-    font-size: ;
+    font-size: 28px;
 }
 
 h4 {
@@ -243,7 +264,7 @@ h4 {
 
 #models .col div {
     color: var(--white);
-    border-radius: 25px;
+    border-radius: 35px;
     background-color: var(--primary);
 }
 
@@ -256,7 +277,6 @@ h4 {
     width: 200px;
     border-radius: 50%;
     margin: 0;
-    display: inline-block;
     object-fit: cover;
 }
 
@@ -279,6 +299,11 @@ h4 {
     width: 50%;
 }
 
+#benefits .card span {
+    font-weight: bold;
+    font-size: 3.0rem;
+}
+
 #about-us h3,
 #about-us h2 {
     color: var(--primary);
@@ -288,6 +313,212 @@ h4 {
     margin: 0 -10px;
 }
 
+#info h2 {
+    font-size: 3.0rem;
+}
+
+#info p {
+    line-height: 2.8rem;
+}
+
+#info .card-image {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+#info .card-image img {
+    border-radius: 50%;
+}
+
+#about-us h3 {
+    font-size: 2.0rem;
+}
+
+#about-us .btn.btn-primary {
+    font-weight: normal;
+}
+
+
 footer {
     margin: 0;
+}
+
+#start {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+#start h1 {
+    color: var(--yellow);
+}
+
+#start .row {
+    align-items: center;
+}
+
+#start .row>* {
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 769px) {
+
+    #app .row .col:first-child {
+        max-width: calc(100% / 3 * 2);
+    }
+
+    #app .card-image {
+        width: 60%;
+    }
+
+    #app .card-content .btn {
+        width: 50%;
+    }
+
+    #app .row .col {
+        max-width: calc(100% / 3);
+    }
+
+    #app .row {
+        flex-direction: row;
+    }
+
+    #plan h2 {
+        font-size: 5rem;
+    }
+
+    #models .card {
+        justify-content: baseline;
+        display: flex;
+    }
+
+    #models .card-content {
+        text-align: initial;
+        padding-left: 1.8rem;
+    }
+
+    #benefits .col {
+        width: calc(100% / 2);
+    }
+
+    #benefits .row {
+        flex-direction: row;
+    }
+
+    #info .row {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #info .col:last-child {
+        width: 30%;
+    }
+
+    #info h2 {
+        font-size: 4rem;
+    }
+
+    #info .col:first-child {
+        width: 60%;
+    }
+
+    #start .row {
+        align-items: center;
+    }
+
+    #start .container {
+        max-width: 60%;
+    }
+
+    #bottom-info .container {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 995px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    #menu-mob {
+        display: none;
+    }
+
+    #navbar {
+        height: 70px;
+    }
+
+    #menu-desk {
+        display: block;
+    }
+
+    #app .lcard {
+        display: flex;
+    }
+
+    #app .lcard .card-image {
+        width: 50%;
+    }
+
+    #app .lcard .card-content {
+        width: 40%;
+    }
+
+    #app .card-content .btn {
+        width: 80%;
+    }
+
+    #plan .container {
+        width: 60%;
+    }
+
+    #plan .row {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #plan .col {
+        width: 40%;
+    }
+
+    #plan .col:last-child img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #plan .col:last-child {
+        align-self: flex-end;
+    }
+
+    #bottom-foot .container {
+        max-width: 40%;
+    }
+
+    #start .container {
+        max-width: 40%;
+    }
+
+    #benefits .col {
+        max-width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .container {
+        max-width: 1140px;
+    }
+
+    #start .container {
+        max-width: 30%;
+    }
+
+    #plan .container {
+        width: 50%;
+    }
 }
